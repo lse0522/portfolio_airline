@@ -1,0 +1,1406 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Travel</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="/css/responsive.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <div class="header-include"></div>
+      <!-- Header -->
+
+      <h1 class="slogan-message">Let’s Travel The World Together!</h1>
+
+      <!-- 항공, 호텔 예약 폼 선택 -->
+      <div class="travel-search-form">
+        <input type="radio" name="tabmenu" id="tab1" checked />
+        <input type="radio" name="tabmenu" id="tab2" />
+        <div class="tab-btn">
+          <label for="tab1">
+            <em>
+              <i class="bi bi-airplane-engines"></i>
+            </em>
+            <span>Flight</span>
+          </label>
+          <label for="tab2">
+            <em>
+              <i class="bi bi-buildings"></i>
+            </em>
+            <span>Hotels</span>
+          </label>
+        </div>
+        <div class="tabs">
+          <!-- 항공 예약 폼  html -->
+          <div class="tab tab1">
+            <div class="flight-field">
+              <div>
+                <!-- 항공 : 출발 -->
+                <label>출발</label>
+                <button class="field-btn flight-start-button">
+                  <i class="bi bi-geo-alt"></i>
+                  <span>ICN인천</span>
+                </button>
+                <div class="flight-start-modal">
+                  <div class="modal-header">
+                    <h4>출발 도시/공항</h4>
+                    <i class="bi bi-x-lg flight-start-modal-close"></i>
+                  </div>
+                  <!-- 항공 : 검색 모달 -->
+                  <div class="modal-search">
+                    <input type="text" placeholder="국가, 도시, 공항명 검색" />
+                  </div>
+                  <div class="flight-list-content">
+                    <div class="flight-list">
+                      <div class="flight-list-item">
+                        <p>국내</p>
+                        <i class="bi bi-chevron-down"></i>
+                      </div>
+                      <ul class="flight-sub-list">
+                        <li>
+                          <p>서울, 대한민국<span>sel</span></p>
+                          <em>event</em>
+                        </li>
+                        <li>
+                          <p>제주, 대한민국<span>cju</span></p>
+                          <em>event</em>
+                        </li>
+                        <li>
+                          <p>부산, 대한민국<span>gmp</span></p>
+                        </li>
+                        <li>
+                          <p>청주, 대한민국<span>pus</span></p>
+                        </li>
+                        <li>
+                          <p>광주, 대한민국<span>kwj</span></p>
+                          <em>event</em>
+                        </li>
+                        <li>
+                          <p>여수, 대한민국<span>rus</span></p>
+                        </li>
+                      </ul>
+                      <div class="flight-list-item">
+                        <p>일본</p>
+                        <i class="bi bi-chevron-down"></i>
+                      </div>
+                      <ul class="flight-sub-list">
+                        <li>
+                          <p>오사카, 일본<span>kix</span></p>
+                          <em>event</em>
+                        </li>
+                        <li>
+                          <p>도쿄, 일본<span>tyo</span></p>
+                          <em>event</em>
+                        </li>
+                        <li>
+                          <p>후쿠오카, 일본<span>fuk</span></p>
+                          <em>event</em>
+                        </li>
+                        <li>
+                          <p>삿포로, 일본<span>cts</span></p>
+                        </li>
+                        <li>
+                          <p>나고야, 일본<span>ngo</span></p>
+                        </li>
+                      </ul>
+                      <div class="flight-list-item">
+                        <p>동남아</p>
+                        <i class="bi bi-chevron-down"></i>
+                      </div>
+                      <ul class="flight-sub-list">
+                        <li>
+                          <p>방콕, 태국<span>bkk</span></p>
+                        </li>
+                        <li>
+                          <p>다낭, 베트남<span>dad</span></p>
+                        </li>
+                        <li>
+                          <p>세부, 필리핀<span>ceb</span></p>
+                          <em>event</em>
+                        </li>
+                        <li>
+                          <p>싱가포르, 싱가포르<span>sin</span></p>
+                        </li>
+                        <li>
+                          <p>마닐라, 필리핀<span>mnl</span></p>
+                          <em>event</em>
+                        </li>
+                      </ul>
+                      <div class="flight-list-item">
+                        <p>중국</p>
+                        <i class="bi bi-chevron-down"></i>
+                      </div>
+                      <ul class="flight-sub-list">
+                        <li>
+                          <p>상하이, 중국<span>pvg</span></p>
+                        </li>
+                      </ul>
+                      <div class="flight-list-item">
+                        <p>유럽</p>
+                        <i class="bi bi-chevron-down"></i>
+                      </div>
+                      <ul class="flight-sub-list">
+                        <li>
+                          <p>파리, 프랑스<span>cdg</span></p>
+                        </li>
+                      </ul>
+                      <div class="flight-list-item">
+                        <p>미주</p>
+                        <i class="bi bi-chevron-down"></i>
+                      </div>
+                      <ul class="flight-sub-list">
+                        <li>
+                          <p>로스앤젤레스, 미국<span>lax</span></p>
+                        </li>
+                      </ul>
+                      <div class="flight-list-item">
+                        <p>대양주</p>
+                        <i class="bi bi-chevron-down"></i>
+                      </div>
+                      <ul class="flight-sub-list">
+                        <li>
+                          <p>괌, 괌<span>gum</span></p>
+                          <em>event</em>
+                        </li>
+                      </ul>
+                      <div class="flight-list-item">
+                        <p>남미</p>
+                        <i class="bi bi-chevron-down"></i>
+                      </div>
+                      <ul class="flight-sub-list">
+                        <li>
+                          <p>멕시코 시티, 멕시코<span>mex</span></p>
+                        </li>
+                      </ul>
+                      <div class="flight-list-item">
+                        <p>아시아</p>
+                        <i class="bi bi-chevron-down"></i>
+                      </div>
+                      <ul class="flight-sub-list">
+                        <li>
+                          <p>울란바토르, 몽골<span>uln</span></p>
+                          <em>event</em>
+                        </li>
+                      </ul>
+                      <div class="flight-list-item">
+                        <p>중동</p>
+                        <i class="bi bi-chevron-down"></i>
+                      </div>
+                      <ul class="flight-sub-list">
+                        <li>
+                          <p>두바이, 아랍에미리트<span>dxb</span></p>
+                        </li>
+                      </ul>
+                      <div class="flight-list-item">
+                        <p>아프리카</p>
+                        <i class="bi bi-chevron-down"></i>
+                      </div>
+                      <ul class="flight-sub-list">
+                        <li>
+                          <p>카이로, 이집트<span>cal</span></p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 항공 : 도착 -->
+              <div class="end-field">
+                <label>도착</label>
+                <button class="field-btn flight-end-button">
+                  <i class="bi bi-geo-alt"></i>
+                  <span>도시, 공항명 입력</span>
+                </button>
+                <!-- 항공 : 도착 모달 -->
+                <div class="flight-end-modal">
+                  <div class="modal-header">
+                    <h4>도착 도시/공항</h4>
+                    <i class="bi bi-x-lg flight-end-modal-close"></i>
+                  </div>
+                  <div class="modal-search">
+                    <input type="text" placeholder="국가, 도시, 공항명 검색" />
+                  </div>
+                  <div class="flight-list-content">
+                    <div class="flight-list">
+                      <div class="flight-list-item">
+                        <p>국내</p>
+                        <i class="bi bi-chevron-down"></i>
+                      </div>
+                      <ul class="flight-sub-list">
+                        <li>
+                          <p>서울, 대한민국<span>sel</span></p>
+                          <em>event</em>
+                        </li>
+                        <li>
+                          <p>제주, 대한민국<span>cju</span></p>
+                          <em>event</em>
+                        </li>
+                        <li>
+                          <p>부산, 대한민국<span>gmp</span></p>
+                        </li>
+                        <li>
+                          <p>청주, 대한민국<span>pus</span></p>
+                        </li>
+                        <li>
+                          <p>광주, 대한민국<span>kwj</span></p>
+                          <em>event</em>
+                        </li>
+                        <li>
+                          <p>여수, 대한민국<span>rus</span></p>
+                        </li>
+                      </ul>
+                      <div class="flight-list-item">
+                        <p>일본</p>
+                        <i class="bi bi-chevron-down"></i>
+                      </div>
+                      <ul class="flight-sub-list">
+                        <li>
+                          <p>오사카, 일본<span>kix</span></p>
+                          <em>event</em>
+                        </li>
+                        <li>
+                          <p>도쿄, 일본<span>tyo</span></p>
+                          <em>event</em>
+                        </li>
+                        <li>
+                          <p>후쿠오카, 일본<span>fuk</span></p>
+                          <em>event</em>
+                        </li>
+                        <li>
+                          <p>삿포로, 일본<span>cts</span></p>
+                        </li>
+                        <li>
+                          <p>나고야, 일본<span>ngo</span></p>
+                        </li>
+                      </ul>
+                      <div class="flight-list-item">
+                        <p>동남아</p>
+                        <i class="bi bi-chevron-down"></i>
+                      </div>
+                      <ul class="flight-sub-list">
+                        <li>
+                          <p>방콕, 태국<span>bkk</span></p>
+                        </li>
+                        <li>
+                          <p>다낭, 베트남<span>dad</span></p>
+                        </li>
+                        <li>
+                          <p>세부, 필리핀<span>ceb</span></p>
+                          <em>event</em>
+                        </li>
+                        <li>
+                          <p>싱가포르, 싱가포르<span>sin</span></p>
+                        </li>
+                        <li>
+                          <p>마닐라, 필리핀<span>mnl</span></p>
+                          <em>event</em>
+                        </li>
+                      </ul>
+                      <div class="flight-list-item">
+                        <p>중국</p>
+                        <i class="bi bi-chevron-down"></i>
+                      </div>
+                      <ul class="flight-sub-list">
+                        <li>
+                          <p>상하이, 중국<span>pvg</span></p>
+                        </li>
+                      </ul>
+                      <div class="flight-list-item">
+                        <p>유럽</p>
+                        <i class="bi bi-chevron-down"></i>
+                      </div>
+                      <ul class="flight-sub-list">
+                        <li>
+                          <p>파리, 프랑스<span>cdg</span></p>
+                        </li>
+                      </ul>
+                      <div class="flight-list-item">
+                        <p>미주</p>
+                        <i class="bi bi-chevron-down"></i>
+                      </div>
+                      <ul class="flight-sub-list">
+                        <li>
+                          <p>로스앤젤레스, 미국<span>lax</span></p>
+                        </li>
+                      </ul>
+                      <div class="flight-list-item">
+                        <p>대양주</p>
+                        <i class="bi bi-chevron-down"></i>
+                      </div>
+                      <ul class="flight-sub-list">
+                        <li>
+                          <p>괌, 괌<span>gum</span></p>
+                          <em>event</em>
+                        </li>
+                      </ul>
+                      <div class="flight-list-item">
+                        <p>남미</p>
+                        <i class="bi bi-chevron-down"></i>
+                      </div>
+                      <ul class="flight-sub-list">
+                        <li>
+                          <p>멕시코 시티, 멕시코<span>mex</span></p>
+                        </li>
+                      </ul>
+                      <div class="flight-list-item">
+                        <p>아시아</p>
+                        <i class="bi bi-chevron-down"></i>
+                      </div>
+                      <ul class="flight-sub-list">
+                        <li>
+                          <p>울란바토르, 몽골<span>uln</span></p>
+                          <em>event</em>
+                        </li>
+                      </ul>
+                      <div class="flight-list-item">
+                        <p>중동</p>
+                        <i class="bi bi-chevron-down"></i>
+                      </div>
+                      <ul class="flight-sub-list">
+                        <li>
+                          <p>두바이, 아랍에미리트<span>dxb</span></p>
+                        </li>
+                      </ul>
+                      <div class="flight-list-item">
+                        <p>아프리카</p>
+                        <i class="bi bi-chevron-down"></i>
+                      </div>
+                      <ul class="flight-sub-list">
+                        <li>
+                          <p>카이로, 이집트<span>cal</span></p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 항공 : 가는날 - 오는날 -->
+              <div class="date-field">
+                <button class="field-btn flight-date-button">
+                  <i class="bi bi-calendar-week"></i>
+                  <span>가는날 - 오는날</span>
+                </button>
+                <!-- 항공 : 가는날 - 오는날 모달 창 -->
+                <div class="flight-date-modal">
+                  <div class="modal-header">
+                    <h4>출발일 - 도착일</h4>
+                    <i class="bi bi-x-lg flight-date-modal-close"></i>
+                  </div>
+                  <div class="flight-date-content">
+                    <div class="flight-start-date-section">
+                      <div class="start-calendar-month">
+                        <i class="bi bi-caret-left-fill"></i>
+                        <h2>2024.05</h2>
+                      </div>
+                      <table class="calendar">
+                        <thead>
+                          <tr>
+                            <th>일</th>
+                            <th>월</th>
+                            <th>화</th>
+                            <th>수</th>
+                            <th>목</th>
+                            <th>금</th>
+                            <th>토</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                              <button><span>1</span></button>
+                            </td>
+                            <td>
+                              <button><span>2</span></button>
+                            </td>
+                            <td>
+                              <button><span>3</span></button>
+                            </td>
+                            <td>
+                              <button><span>4</span><em>today</em></button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <button><span>5</span></button>
+                            </td>
+                            <td>
+                              <button><span>6</span></button>
+                            </td>
+                            <td>
+                              <button><span>7</span></button>
+                            </td>
+                            <td>
+                              <button><span>8</span></button>
+                            </td>
+                            <td>
+                              <button><span>9</span></button>
+                            </td>
+                            <td>
+                              <button><span>10</span></button>
+                            </td>
+                            <td>
+                              <button><span>11</span></button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <button><span>12</span></button>
+                            </td>
+                            <td>
+                              <button><span>13</span></button>
+                            </td>
+                            <td>
+                              <button><span>14</span></button>
+                            </td>
+                            <td>
+                              <button><span>15</span></button>
+                            </td>
+                            <td>
+                              <button><span>16</span></button>
+                            </td>
+                            <td>
+                              <button><span>17</span></button>
+                            </td>
+                            <td>
+                              <button><span>18</span></button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <button><span>19</span></button>
+                            </td>
+                            <td>
+                              <button><span>20</span></button>
+                            </td>
+                            <td>
+                              <button><span>21</span></button>
+                            </td>
+                            <td>
+                              <button><span>22</span></button>
+                            </td>
+                            <td>
+                              <button><span>23</span></button>
+                            </td>
+                            <td>
+                              <button><span>24</span></button>
+                            </td>
+                            <td>
+                              <button><span>25</span></button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <button><span>26</span></button>
+                            </td>
+                            <td>
+                              <button><span>27</span></button>
+                            </td>
+                            <td>
+                              <button><span>28</span></button>
+                            </td>
+                            <td>
+                              <button><span>29</span></button>
+                            </td>
+                            <td>
+                              <button><span>30</span></button>
+                            </td>
+                            <td>
+                              <button><span>31</span></button>
+                            </td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="flight-start-date-section">
+                      <div class="start-calendar-month">
+                        <h2>2024.06</h2>
+                        <i class="bi bi-caret-right-fill"></i>
+                      </div>
+                      <table class="calendar">
+                        <thead>
+                          <tr>
+                            <th>일</th>
+                            <th>월</th>
+                            <th>화</th>
+                            <th>수</th>
+                            <th>목</th>
+                            <th>금</th>
+                            <th>토</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                              <button><span>1</span></button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <button><span>2</span></button>
+                            </td>
+                            <td>
+                              <button><span>3</span></button>
+                            </td>
+                            <td>
+                              <button><span>4</span></button>
+                            </td>
+                            <td>
+                              <button><span>5</span></button>
+                            </td>
+                            <td>
+                              <button><span>6</span></button>
+                            </td>
+                            <td>
+                              <button><span>7</span></button>
+                            </td>
+                            <td>
+                              <button><span>8</span></button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <button><span>9</span></button>
+                            </td>
+                            <td>
+                              <button><span>10</span></button>
+                            </td>
+                            <td>
+                              <button><span>11</span></button>
+                            </td>
+                            <td>
+                              <button><span>12</span></button>
+                            </td>
+                            <td>
+                              <button><span>13</span></button>
+                            </td>
+                            <td>
+                              <button><span>14</span></button>
+                            </td>
+                            <td>
+                              <button><span>15</span></button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <button><span>16</span></button>
+                            </td>
+                            <td>
+                              <button><span>17</span></button>
+                            </td>
+                            <td>
+                              <button><span>18</span></button>
+                            </td>
+                            <td>
+                              <button><span>19</span></button>
+                            </td>
+                            <td>
+                              <button><span>20</span></button>
+                            </td>
+                            <td>
+                              <button><span>21</span></button>
+                            </td>
+                            <td>
+                              <button><span>22</span></button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <button><span>23</span></button>
+                            </td>
+                            <td>
+                              <button><span>24</span></button>
+                            </td>
+                            <td>
+                              <button><span>25</span></button>
+                            </td>
+                            <td>
+                              <button><span>26</span></button>
+                            </td>
+                            <td>
+                              <button><span>27</span></button>
+                            </td>
+                            <td>
+                              <button><span>28</span></button>
+                            </td>
+                            <td>
+                              <button><span>29</span></button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <button><span>30</span></button>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 항공 : 인원 -->
+              <div class="person-field">
+                <button class="field-btn flight-person-button">
+                  <i class="bi bi-person"></i>
+                  <span>인원</span>
+                </button>
+                <!-- 항공 : 인원 모달창 -->
+                <div class="flight-person-modal">
+                  <div class="modal-header">
+                    <h4>인원, 좌석등급</h4>
+                    <i class="bi bi-x-lg flight-person-modal-close"></i>
+                  </div>
+                  <div class="flight-person-content">
+                    <div class="flight-person-select">
+                      <button class="seat-item">일반석</button>
+                      <button class="seat-item">프리미엄 <br />일반석</button>
+                      <button class="seat-item">비지니스석</button>
+                      <button class="seat-item">일등석</button>
+                    </div>
+                    <div class="flight-person-selection">
+                      <div class="flight-adult-selection">
+                        <div class="flight-adult-info">
+                          <p>
+                            성인(만 13세 이상)
+                            <span>탑승일 기준 2011.7.12 이전 출생</span>
+                          </p>
+                        </div>
+                        <div class="flight-adult-count">
+                          <button class="flight-adult-minus">-</button>
+                          <div id="flight-adult-num"><h1>0</h1></div>
+                          <button class="flight-adult-plus">+</button>
+                        </div>
+                      </div>
+                      <div class="flight-child-selection">
+                        <div class="flight-child-info">
+                          <p>
+                            소아(만 2세~만 13세 미만)
+                            <span>탑승일 기준 2011.7.12~2022.7.12 출생</span>
+                          </p>
+                        </div>
+                        <div class="flight-child-count">
+                          <button class="flight-child-minus">-</button>
+                          <div id="flight-child-num"><h1>0</h1></div>
+                          <button class="flight-child-plus">+</button>
+                        </div>
+                      </div>
+                      <div class="flight-infant-selection">
+                        <div class="flight-infant-info">
+                          <p>
+                            유아(24개월 미만)
+                            <span>탑승일 기준 2022.7.12 이후 출생</span>
+                          </p>
+                        </div>
+                        <div class="flight-infant-count">
+                          <button class="flight-infant-minus">-</button>
+                          <div id="flight-infant-num"><h1>0</h1></div>
+                          <button class="flight-infant-plus">+</button>
+                        </div>
+                      </div>
+                      <div class="seat-category">
+                        <p>
+                          아동 및 유아 예약안내
+                          <i class="bi bi-exclamation-circle-fill"></i>
+                        </p>
+                        <em>
+                          유아는 좌석을 점유하지 않습니다.
+                          <br />
+                          좌석 점유를 원하시는 경우 소아로 예매를 진행해 주시기
+                          바랍니다.
+                          <br />
+                          귀국/도착일 기준으로 나이 조건이 변경될 경우
+                          추가요금이 부과될 수 있습니다.
+                        </em>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <button class="search-btn flight-search-button">
+                  <span>검색</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- 호텔 예약 폼  html -->
+          <div class="tab tab2">
+            <div class="flight-field">
+              <!-- 호텔 : 지정  -->
+              <div class="hotel-field">
+                <label>호텔</label>
+                <button class="field-btn hotel-button">
+                  <i class="bi bi-geo-alt"></i>
+                  <span>어디로 가시나요?</span>
+                </button>
+                <!-- 호텔 : 지정 모달  -->
+                <div class="hotel-modal">
+                  <div class="modal-header">
+                    <h4>여행지, 숙소</h4>
+                    <i class="bi bi-x-lg hotel-modal-close"></i>
+                  </div>
+                  <div class="modal-search">
+                    <input
+                      type="text"
+                      placeholder="지역명, 명소명, 호텔명 검색"
+                    />
+                  </div>
+                  <div class="hotel-modal-content">
+                    <h4><i class="bi bi-geo-alt-fill"></i>주요도시</h4>
+                    <ul class="hotel-local-list">
+                      <li>서울</li>
+                      <li>제주</li>
+                      <li>부산</li>
+                      <li>인천</li>
+                      <li>강릉</li>
+                      <li>속초</li>
+                      <li>여수</li>
+                      <li>경주</li>
+                      <li>대구</li>
+                      <li>대전</li>
+                      <li>울산</li>
+                      <li>평창</li>
+                      <li>전주</li>
+                      <li>군산</li>
+                      <li>앙양</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- 호텔 : 체크인 - 체크아웃   -->
+              <div class="date-field">
+                <button class="field-btn hotel-date-button">
+                  <i class="bi bi-calendar2-week"></i>
+                  <span>체크인 - 체크아웃</span>
+                </button>
+                <!-- 호텔 : 체크인 - 체크아웃 모달창   -->
+                <div class="hotel-date-modal">
+                  <div class="modal-header">
+                    <h4>출발일 - 도착일</h4>
+                    <i class="bi bi-x-lg hotel-date-modal-close"></i>
+                  </div>
+                  <div class="hotel-date-content">
+                    <div class="hotel-start-date-section">
+                      <div class="start-calendar-month">
+                        <i class="bi bi-caret-left-fill"></i>
+                        <h2>2024.05</h2>
+                      </div>
+                      <table class="calendar">
+                        <thead>
+                          <tr>
+                            <th>일</th>
+                            <th>월</th>
+                            <th>화</th>
+                            <th>수</th>
+                            <th>목</th>
+                            <th>금</th>
+                            <th>토</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                              <button><span>1</span></button>
+                            </td>
+                            <td>
+                              <button><span>2</span></button>
+                            </td>
+                            <td>
+                              <button><span>3</span></button>
+                            </td>
+                            <td>
+                              <button><span>4</span><em>today</em></button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <button><span>5</span></button>
+                            </td>
+                            <td>
+                              <button><span>6</span></button>
+                            </td>
+                            <td>
+                              <button><span>7</span></button>
+                            </td>
+                            <td>
+                              <button><span>8</span></button>
+                            </td>
+                            <td>
+                              <button><span>9</span></button>
+                            </td>
+                            <td>
+                              <button><span>10</span></button>
+                            </td>
+                            <td>
+                              <button><span>11</span></button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <button><span>12</span></button>
+                            </td>
+                            <td>
+                              <button><span>13</span></button>
+                            </td>
+                            <td>
+                              <button><span>14</span></button>
+                            </td>
+                            <td>
+                              <button><span>15</span></button>
+                            </td>
+                            <td>
+                              <button><span>16</span></button>
+                            </td>
+                            <td>
+                              <button><span>17</span></button>
+                            </td>
+                            <td>
+                              <button><span>18</span></button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <button><span>19</span></button>
+                            </td>
+                            <td>
+                              <button><span>20</span></button>
+                            </td>
+                            <td>
+                              <button><span>21</span></button>
+                            </td>
+                            <td>
+                              <button><span>22</span></button>
+                            </td>
+                            <td>
+                              <button><span>23</span></button>
+                            </td>
+                            <td>
+                              <button><span>24</span></button>
+                            </td>
+                            <td>
+                              <button><span>25</span></button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <button><span>26</span></button>
+                            </td>
+                            <td>
+                              <button><span>27</span></button>
+                            </td>
+                            <td>
+                              <button><span>28</span></button>
+                            </td>
+                            <td>
+                              <button><span>29</span></button>
+                            </td>
+                            <td>
+                              <button><span>30</span></button>
+                            </td>
+                            <td>
+                              <button><span>31</span></button>
+                            </td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="hotel-start-date-section">
+                      <div class="start-calendar-month">
+                        <h2>2024.06</h2>
+                        <i class="bi bi-caret-right-fill"></i>
+                      </div>
+                      <table class="calendar">
+                        <thead>
+                          <tr>
+                            <th>일</th>
+                            <th>월</th>
+                            <th>화</th>
+                            <th>수</th>
+                            <th>목</th>
+                            <th>금</th>
+                            <th>토</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                              <button><span>1</span></button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <button><span>2</span></button>
+                            </td>
+                            <td>
+                              <button><span>3</span></button>
+                            </td>
+                            <td>
+                              <button><span>4</span></button>
+                            </td>
+                            <td>
+                              <button><span>5</span></button>
+                            </td>
+                            <td>
+                              <button><span>6</span></button>
+                            </td>
+                            <td>
+                              <button><span>7</span></button>
+                            </td>
+                            <td>
+                              <button><span>8</span></button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <button><span>9</span></button>
+                            </td>
+                            <td>
+                              <button><span>10</span></button>
+                            </td>
+                            <td>
+                              <button><span>11</span></button>
+                            </td>
+                            <td>
+                              <button><span>12</span></button>
+                            </td>
+                            <td>
+                              <button><span>13</span></button>
+                            </td>
+                            <td>
+                              <button><span>14</span></button>
+                            </td>
+                            <td>
+                              <button><span>15</span></button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <button><span>16</span></button>
+                            </td>
+                            <td>
+                              <button><span>17</span></button>
+                            </td>
+                            <td>
+                              <button><span>18</span></button>
+                            </td>
+                            <td>
+                              <button><span>19</span></button>
+                            </td>
+                            <td>
+                              <button><span>20</span></button>
+                            </td>
+                            <td>
+                              <button><span>21</span></button>
+                            </td>
+                            <td>
+                              <button><span>22</span></button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <button><span>23</span></button>
+                            </td>
+                            <td>
+                              <button><span>24</span></button>
+                            </td>
+                            <td>
+                              <button><span>25</span></button>
+                            </td>
+                            <td>
+                              <button><span>26</span></button>
+                            </td>
+                            <td>
+                              <button><span>27</span></button>
+                            </td>
+                            <td>
+                              <button><span>28</span></button>
+                            </td>
+                            <td>
+                              <button><span>29</span></button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <button><span>30</span></button>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 호텔 : 인원   -->
+              <div class="person-field">
+                <button class="field-btn hotel-person-button">
+                  <i class="bi bi-person"></i>
+                  <span>인원</span>
+                </button>
+                <!-- 호텔 : 인원 모달   -->
+                <div class="hotel-person-modal">
+                  <div class="modal-header">
+                    <h4>인원, 좌석등급</h4>
+                    <i class="bi bi-x-lg hotel-person-modal-close"></i>
+                  </div>
+                  <div class="hotel-person-content">
+                    <div class="hotel-person-selection">
+                      <div class="hotel-adult-selection">
+                        <div class="hotel-adult-info">
+                          <p>성인<span>(만 18세 이상)</span></p>
+                        </div>
+                        <div class="hotel-adult-count">
+                          <button class="hotel-adult-minus">-</button>
+                          <div id="hotel-adult-num"><h1>0</h1></div>
+                          <button class="hotel-adult-plus">+</button>
+                        </div>
+                      </div>
+                      <div class="hotel-child-selection">
+                        <div class="hotel-child-info">
+                          <p>어린이<span>만18세 미만</span></p>
+                        </div>
+                        <div class="hotel-child-count">
+                          <button class="hotel-child-minus">-</button>
+                          <div id="hotel-child-num"><h1>0</h1></div>
+                          <button class="hotel-child-plus">+</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <button class="search-btn flight-search-button">
+                  <span>검색</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 이벤트 창 -->
+      <div class="event-section">
+        <h3>이벤트</h3>
+        <div class="event-items">
+          <div class="event-item">
+            <p>
+              인기 호텔
+              <br />
+              최대 30% 할인
+            </p>
+            <img src="/images/event/event-01.png" />
+          </div>
+          <div class="event-item">
+            <p>
+              신규 가입 즉시!
+              <br />
+              항공권 할인쿠폰 지급
+            </p>
+            <img src="/images/event/event-02.png" />
+          </div>
+          <div class="event-item">
+            <p>
+              해외 여행
+              <br />
+              20만원 쿠폰 팩
+            </p>
+            <img src="/images/event/event-03.png" />
+          </div>
+        </div>
+      </div>
+
+      <!-- 여행지 리스트 -->
+      <div class="flight-products-list">
+        <div class="popular-products-list">
+          <div class="flight-products-header">
+            <h3>해외 인기 여행지</h3>
+            <a href="#none"
+              >추천 항공권 더보기<i class="bi bi-arrow-right"></i
+            ></a>
+          </div>
+          <div class="popular-products-items">
+            <div class="item">
+              <img
+                src="/images/popular-product/popular1.jpg"
+              />
+              <p>도쿄</p>
+            </div>
+            <div class="item">
+              <img
+                src="/images/popular-product/popular2.jpg"
+              />
+              <p>오사카</p>
+            </div>
+            <div class="item">
+              <img
+                src="/images/popular-product/popular3.jpg"
+              />
+              <p>괌</p>
+            </div>
+            <div class="item">
+              <img
+                src="/images/popular-product/popular4.jpg"
+              />
+              <p>다낭</p>
+            </div>
+            <div class="item">
+              <img
+                src="/images/popular-product/popular5.jpg"
+              />
+              <p>뉴욕</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="theme-products-list">
+          <div class="theme-products-header">
+            <h3>테마별 인기 여행지</h3>
+            <a href="#none"
+              >추천 항공권 더보기<i class="bi bi-arrow-right"></i
+            ></a>
+          </div>
+          <div class="theme-products-items">
+            <div class="item">
+              <img
+                src="/images/theme-product/theme1.jpg"
+              />
+              <p>#가족여행</p>
+            </div>
+            <div class="item">
+              <img
+                src="/images/theme-product/theme2.jpg"
+              />
+              <p>#스킨스쿠버다이빙</p>
+            </div>
+            <div class="item">
+              <img
+                src="/images/theme-product/theme3.jpg"
+              />
+              <p>#해변</p>
+            </div>
+            <div class="item">
+              <img
+                src="/images/theme-product/theme4.jpg"
+              />
+              <p>#휴양지</p>
+            </div>
+            <div class="item">
+              <img
+                src="/images/theme-product/theme5.jpg"
+              />
+              <p>#골프</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 호텔 베스트 리스트 -->
+      <div class="hotel-products-list">
+        <div class="hotel-best-list">
+          <div class="hotel-header">
+            <h3>호텔 Best 차트</h3>
+            <input type="radio" name="localtabmenu" id="localtab1" checked />
+            <input type="radio" name="localtabmenu" id="localtab2" />
+            <input type="radio" name="localtabmenu" id="localtab3" />
+            <input type="radio" name="localtabmenu" id="localtab4" />
+            <!-- 호텔 리스트 메뉴 -->
+            <div class="local-tab-btn">
+              <label for="localtab1">
+                <em>
+                  <span>제주도</span>
+                </em>
+              </label>
+              <label for="localtab2">
+                <em>
+                  <span>서울</span>
+                </em>
+              </label>
+              <label for="localtab3">
+                <em>
+                  <span>부산</span>
+                </em>
+              </label>
+              <label for="localtab4">
+                <em>
+                  <span>여수</span>
+                </em>
+              </label>
+            </div>
+            <!-- 호텔 리스트 내용 -->
+            <div class="local-tabs">
+              <div class="local-tab local-tab1">
+                <div class="local-items-left">
+                  <div class="item local-item">
+                    <img
+                      src="/images/hotel-product/hotel1.jpg"
+                    />
+                    <div class="item-info">
+                      <div><p>1.</p></div>
+                      <p>제주 호텔</p>
+                      <p>
+                        <span><i class="bi bi-star-fill"></i></span>9.0
+                      </p>
+                      <p><span>204,00</span>원 ~</p>
+                    </div>
+                  </div>
+                  <div class="item local-item">
+                    <img
+                      src="/images/hotel-product/hotel2.jpg"
+                    />
+                    <div class="item-info">
+                      <div><p>2.</p></div>
+                      <p>제주 신라 호텔</p>
+                      <p>
+                        <span><i class="bi bi-star-fill"></i></span>8.6
+                      </p>
+                      <p><span>236,00</span>원 ~</p>
+                    </div>
+                  </div>
+                  <div class="item local-item">
+                    <img
+                      src="/images/hotel-product/hotel3.jpg"
+                    />
+                    <div class="item-info">
+                      <div><p>3.</p></div>
+                      <p>제주 롯데 호텔</p>
+                      <p>
+                        <span><i class="bi bi-star-fill"></i></span>8.2
+                      </p>
+                      <p><span>224,00</span>원 ~</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="local-items-right">
+                  <div class="item local-item">
+                    <img
+                      src="/images/hotel-product/hotel4.jpg"
+                    />
+                    <div class="item-info">
+                      <div><p>4.</p></div>
+                      <p>신라 스테이 제주</p>
+                      <p>
+                        <span><i class="bi bi-star-fill"></i></span>8.0
+                      </p>
+                      <p><span>104,00</span>원 ~</p>
+                    </div>
+                  </div>
+                  <div class="item local-item">
+                    <img
+                      src="/images/hotel-product/hotel5.jpg"
+                    />
+                    <div class="item-info">
+                      <div><p>5.</p></div>
+                      <p>파라다이스 호텔 제주</p>
+                      <p>
+                        <span><i class="bi bi-star-fill"></i></span>8.2
+                      </p>
+                      <p><span>296,00</span>원 ~</p>
+                    </div>
+                  </div>
+                  <div class="item local-item">
+                    <img
+                      src="/images/hotel-product/hotel6.jpg"
+                    />
+                    <div class="item-info">
+                      <div><p>6.</p></div>
+                      <p>그랜드 조선 제주</p>
+                      <p>
+                        <span><i class="bi bi-star-fill"></i></span>8.2
+                      </p>
+                      <p><span>189,00</span>원 ~</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="local-tab local-tab2">
+                <div class="no-posts">
+                  <p>게시물이 없습니다.(tab 2)</p>
+                </div>
+              </div>
+              <div class="local-tab local-tab3">
+                <div class="no-posts">
+                  <p>게시물이 없습니다.(tab 3)</p>
+                </div>
+              </div>
+              <div class="local-tab local-tab4">
+                <div class="no-posts">
+                  <p>게시물이 없습니다.(tab 4)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer-include"></div>
+      <!-- Footer -->
+    </div>
+
+    <!-- 로딩페이지 -->
+    <div class="loading-modal">
+      <div class="loading-section">
+        <p>0 km</p>
+        <div class="bar">
+          <i class="bi bi-airplane-engines-fill airplane-icon"></i>
+          <div class="sub-bar"></div>
+          <img
+            src="/images/free-icon-chat-6790915.png"
+            alt=""
+          />
+          <span>
+            <em id="number-grow">0</em>
+            km
+          </span>
+        </div>
+        <p>
+          <i class="bi bi-pin-map-fill"></i>
+          1,650 km
+        </p>
+      </div>
+    </div>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Custom JS -->
+    <script src="/js/custom.js"></script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+/* Font Icon CDN */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+/* Font Family CDN */
+@font-face {
+  font-family: 'GmarketSans';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root{
+  /* Font Family */
+  --primary : 'GmarketSansMedium';
+
+  /* Text Color */
+  --black : #000000;
+  --dark-black : #333333;
+  --dark-gray : #777777;
+  --silver-gray : #C0C0C0;
+  --gloudy-gray : #eeeeee;
+
+
+  /* Color */
+  --main-color : #003BFF;
+  --light-blue : #88A4FF;
+  --crimson : #D95555;
+
+  /* Card Color */
+  --light-green : #E7FFEC;
+  --light-sky : #EAF8FF;
+  --light-yellow : #FFF5D8;
+  --gold : gold;
+}

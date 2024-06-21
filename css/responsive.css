@@ -1,0 +1,286 @@
+@media (max-width : 768px){
+  h1{
+    font-size: 24px;
+  }
+    /* Scroll */
+    body{
+      -ms-overflow-style: none;
+    }
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  /* #################### Header #################### */
+  header{
+    width: 90%;
+    height: 80px;
+  }
+  .logo-a a i{
+    font-size: 24px;
+  }
+  .login-a a{
+    font-size: 12px;
+  }
+  /* #################### Footer #################### */
+  footer{
+    margin-top: 80px;
+    font-size: 10px;
+    text-align: center;
+  }
+  .footer-nav{
+    width: 90%;
+    height: 40px;
+    justify-content: center;
+  }
+  .footer-nav ul li{
+    padding: 0 6px;
+  }
+  .language-select{
+    font-size: 10px;
+  }
+  .footer-content{
+    width: 90%;
+    padding: 10px 0;
+  }
+  .footer-content > div{
+    float: none;
+    width: 100%;
+    padding: 0;
+  }
+  .company-info,
+  .customer-service,
+  .app-download{
+    margin-top: 20px;
+  }
+  .company-info p span{
+    padding: 0;
+    display: block;
+  }
+  .company-info p span:first-child{
+    border : none;
+  }
+  .app-download img{
+    width: 40px;
+    float: none;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  /* #################### Main #################### */
+  .container{
+    background-size: 100% 300px;
+  }
+  .slogan-message{
+    margin-top: 70px;
+  }
+  /* #################### 항공, 호텔 예약 폼 선택 #################### */
+  .travel-search-form{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    display: inline-block;
+  }
+  .tab{
+    width: 100%;
+    box-shadow: none;
+  }
+  /* #################### 항공권 검색 #################### */
+  .flight-field{
+    display: block;
+  }
+  .flight-field > div{
+    margin-bottom: 40px;
+  }
+  .field-btn,
+  .field-btn.flight-date-button,
+  .field-btn.flight-person-button,
+  .field-btn.flight-hotel-button,
+  .search-btn,
+  .field-btn.hotel-button,
+  .field-btn.hotel-date-button,
+  .field-btn.hotel-person-button{
+    width: 100%;
+    height: 40px;
+  }
+  /* #################### 이벤트창 #################### */
+  .event-section{
+    width: 90%;
+  }
+  .event-items{
+    display: block;
+  }
+  .event-item{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .event-item p{
+    font-size: 16px;
+    line-height: 2em;
+  }
+  /* #################### 해외 인기 여행지 #################### */
+  .popular-products-list,
+  .theme-products-list,
+  .hotel-best-list{
+    width: 90%;
+    overflow: hidden;
+    margin-top: 80px;
+  }
+  .popular-products-items,
+  .theme-products-items{
+    display: block;
+  }
+  .flight-products-header a,
+  .theme-products-header a{
+    font-size: 12px;
+  }
+  .item{
+    margin-bottom: 10px;
+    float: left;
+    width: 50%;
+  }
+  .item img{
+    width: 90%;
+    height: 140px;
+    border-radius: 10px;
+    margin: auto;
+  }
+  .item p{
+    margin: 20px 0;
+    text-align: center;
+  }
+  /* #################### 호텔 베스트 여행지 #################### */
+  .local-tab-btn label em{
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: 14px;
+  }
+  .local-tab > div{
+    float: none;
+    width: 100%;
+  }
+  .local-item{
+    width: 100%;
+  }
+  .item img{
+    width: 140px;
+    margin-right: 10px;
+  }
+  .item-info > div{
+    width: 30px;
+  }
+  .item-info p{
+    text-align: start;
+    font-size: 18px;
+  }
+  /* #################### 로그인 페이지 #################### */
+  .login-form{
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .status,
+  .guest-order{
+    font-size: 12px;
+  }
+    /* #################### 항공 모달 페이지 #################### */
+  .flight-start-modal,
+  .flight-end-modal,
+  .flight-date-modal,
+  .flight-person-modal,
+  .hotel-modal,
+  .hotel-date-modal,
+  .hotel-person-modal,
+  .hotel-date-modal{
+    width: 90%;
+  }
+  /* 날짜 */
+  .flight-date-content > div,
+  .hotel-date-content > div{
+    padding: 20px;
+    width: 100%;
+    float: none;
+  }
+  .start-calendar-month i{
+    display: none;
+  }
+  /* 인원 */
+  .flight-person-selection h1,
+  .flight-person-selection p,
+  .hotel-person-selection p,
+  .hotel-person-selection h1{
+    font-size: 14px;
+  }
+  .flight-person-selection span,
+  .hotel-person-selection span{
+    font-size: 10px;
+  }
+  .flight-person-select{
+    height: auto;
+    display: block;
+  }
+  .flight-person-select .seat-item{
+    height: 50px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .flight-person-select  .seat-item:nth-child(2) br{
+    display: none;
+  }
+  .flight-adult-count button,
+  .flight-child-count button,
+  .flight-infant-count button,
+  .hotel-adult-count button,
+  .hotel-child-count button{
+    width: 30px;
+    height: 30px;
+  }
+  /* 호텔 검색 */
+  .hotel-local-list li{
+    width: 31%;
+  }
+  /* #################### 로딩 페이지 #################### */
+  .loading-section{
+    width: 90%;
+    height: 60%;
+    flex-direction: column;
+  }
+  .bar{
+    width: 4px;
+    height: 70%;
+    position: relative;
+  }
+  .sub-bar{
+    width: 4px;
+    height: 0;
+    animation: mobile-sub-bar 10s ease both;
+  }
+  .airplane-icon{
+    animation: airplane 10s ease both;
+    transform: translate(-47%, -50%) rotate(180deg);
+  } 
+  .bar img{
+    transform:translate(10px, -40px) rotate(90deg);
+  }
+  .bar span{
+    transform:translate(60px, 0px) ;
+    writing-mode: vertical-lr;
+  }
+  .bar em{
+    transform:translate(0px, -40px);
+  }
+  @keyframes mobile-sub-bar{
+    0%{
+      height: 0%;
+    }
+    100%{
+      height: 100%;
+    }
+  }
+  @keyframes airplane{
+    0%{
+      top: 0;
+    }
+    100%{
+      top: 100%;
+    }
+  }
+  
+}
